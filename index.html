@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="mediaquerries.css">
+
+<title>Главная</title>
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar__wrapper">
+      <div class="navbar__icons navbar__icons-left">
+        <a class="navbar__icon" href="index.html">
+          <img src="img/logo.svg" alt="logo">
+          <p class="navbar__icon__text">Работаем с 2007 года</p>
+        </a>
+      </div>
+      <div class="navbar__icons navbar__icons-right-mobile">
+        <a href="#" class="openMobileNav"><img src="img/menu.svg"></a>
+      </div>
+      <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <div class="overlay-content">
+          <a href="#about" class="mobileNavLink">О нас</a>
+          <a href="#projects" class="mobileNavLink">Проекты</a>
+          <a href="#details" class="mobileNavLink">Характеристики</a>
+          <a href="#clients" class="mobileNavLink">Клиенты</a>
+          <a href="#form" class="mobileNavLink">Консультация</a>
+        </div>
+
+      </div>
+
+      <div class="navbar__icons navbar__icons-right">
+        <p class="navbar__icon__text hide-mobile"><i class="fas fa-map-marker-alt navbar__icon__fa"></i>Улан-Удэ | ул. Ленина, 1</p>
+        <a class="navbar__icon__text hide-mobile" href="">+7 (800) 000-000</a>
+        <a class="navbar__icon__text hide-mobile" href=""><i class="fas fa-phone-alt navbar__icon__fa"></i>Заказать обратный звонок</a>
+      </div>      
+    </div>
+    <div class="navbar__wrapper header-nav">
+      <div class="navbar__links">
+        <a class="navbar__link" href="#about">О нас</a>
+        <a class="navbar__link" href="#projects">Проекты</a>
+        <a class="navbar__link" href="#details">Характеристики</a>
+        <a class="navbar__link" href="#clients">Клиенты</a>
+        <a class="navbar__link" href="#form">Консультация</a>
+      </div>
+    </div>
+  </header>
+  <!--Интро-->
+  <section class="section section__intro">
+    <div class="section__wrapper">
+      <div class="section__intro__heading  animate__block animate__block__left">
+        <h1 class="heading">ИЗГОТОВЛЕНИЕ <span class="yellow">БЫТОВОК</span><br>
+          ПО ТИПОВЫМ И ИНДИВИДУАЛЬНЫМ<br>
+          ПРОЕКТАМ</h1>
+        <p class="heading__bottom">Доставка, сборка на вашем участке под ключ</p>
+        <a class="button" href="#form">получить консультацию</a>
+        <div class="heading__icons">
+          <a class="contacts" href=""><i class="fab fa-viber  contacts__icon"></i></a>
+          <a class="contacts" href=""><i class="telegram-icon contacts__icon"></i></i></a>
+          <a class="contacts" href=""><i class="fab fa-whatsapp contacts__icon"></i></a>
+        </div>
+      </div>
+    </div>
+ </section>
+ <!--Почему-->
+ <section class="section section__why" id="about">
+  <div class="section__wrapper">
+    <div class="section__why__left animate__block animate__block__left">
+      <h2 class="heading">Почему именно мы?</h2>
+      <p class="why__text">Компания "Структура" предоставляет услуги по изготовлению бытовок и вагончиков в Улан-Удэ.
+        На строительных площадках вне зависимости от рода производимых работ (дорожное, жилое или иное строительство) для комфортного проживания рабочего персонала требуется организация мест отдыха и быта.</p>
+      <p class="why__text">С этой задачей прекрасно справляются металлические бытовки или вагончики.
+          В таких помещениях можно установить всё необходимое для человека: кухню, санузел, душевую или рабочее место. Изготовление вагончиков и бытовок — одно из основных направлений деятельности компании «Структура».
+          Мы занимаемся их производством почти десять лет.</p>
+      </div>
+    <div class="section__why__right animate__block animate__block__right">
+    </div>
+  </div>
+ </section>
+ <!--Цифры-->
+ <section class="section section__features  animate__block animate__block__right">
+  <div class="section__wrapper">
+    <div class="feature">
+      <p class="feature__heading">10</p>
+      <p class="feature__text">лет качественной работы</p>
+    </div>
+    <div class="feature">
+      <p class="feature__heading">1800</p>
+      <p class="feature__text">и более бытовок уже изготовлено</p>
+    </div>
+    <div class="feature">
+      <p class="feature__heading">2</p>
+      <p class="feature__text">производственных цеха</p>
+    </div>
+    <div class="feature">
+      <p class="feature__heading">10</p>
+      <p class="feature__text">крупных проектов</p>
+    </div>
+  </div>
+ </section>
+</section>
+<!--Проекты-->
+<section class="section section__projects" id="projects">
+ <div class="section__wrapper">
+  <h2 class="heading">проекты</h2>
+  <h3 class="heading">варианты конструкций</h3>
+  <div class="animate__block animate__block__left">
+    <div class="projects__tablinks">
+      <div class="tablink__block active">
+        <div class="arrow arrow-right">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button class="tablink" onclick="openProject(event, 'projects_build')">Строительные бытовки</button>
+        <div class="arrow arrow-left">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="tablink__block">
+        <div class="arrow arrow-right">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button class="tablink" onclick="openProject(event, 'projects_security')">Посты охраны</button>
+        <div class="arrow arrow-left">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="tablink__block">
+        <div class="arrow arrow-right">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <button class="tablink" onclick="openProject(event, 'projects_modul')">Модульные конструкции</button>
+        <div class="arrow arrow-left">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <!--Строительные -->
+    <div class="projects tabcontent projects_build active-tab" id="">
+      <div class="project">
+        <img src="img/byt_1.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400 руб.</span></p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="img/byt_2.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="img/byt_3.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+    </div>
+    <!--Посты охраны -->
+    <div class="projects tabcontent projects_security" id="">
+      <div class="project">
+        <img src="img/byt_2.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="img/byt_2.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="img/byt_2.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+    </div>
+    <!--Модульные -->
+    <div class="projects tabcontent projects_modul" id="">
+      <div class="project">
+        <img src="img/byt_3.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="img/byt_3.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="img/byt_3.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+    </div>
+    <!--Слайдер строительные бытовки-->
+    <div class="tabcontent projects_build slidercontent active-tab">
+      <div class="slider">
+        <div class="slider-item">
+            <img src="img/byt_1.jpg" alt="Первый слайд">
+            <div class="slideText">
+              <p class="project__heading">Классная бытовка</p>
+              <p class="project__descr">Площадь 2,4 кв.м.</p>
+              <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+            </div>
+        </div>
+
+        <div class="slider-item">
+            <img src="img/byt_2.jpg" alt="Второй слайд">
+            <div class="slideText">
+              <p class="project__heading">Классная бытовка</p>
+              <p class="project__descr">Площадь 2,4 кв.м.</p>
+              <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+            </div>
+        </div>
+
+        <div class="slider-item">
+            <img src="img/byt_3.jpg" alt="Третий слайд">
+            <div class="slideText">
+              <p class="project__heading">Классная бытовка</p>
+              <p class="project__descr">Площадь 2,4 кв.м.</p>
+              <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+            </div>
+        </div>
+      <a class="prev" onclick="minusSlide('projects_build')"></a>
+      <a class="next" onclick="plusSlide('projects_build')"></a>
+      </div>
+    </div>
+    <!--Слайдер посты охраны-->
+    <div class="tabcontent projects_security slidercontent">
+      <div class="slider ">
+        <div class="slider-item">
+            <img src="img/byt_inner_1.jpg" alt="Первый слайд">
+            <div class="slideText">
+              <p class="project__heading">Классная бытовка</p>
+              <p class="project__descr">Площадь 2,4 кв.м.</p>
+              <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+            </div>
+        </div>
+
+        <div class="slider-item">
+            <img src="img/byt_inner_2.jpg" alt="Второй слайд">
+            <div class="slideText">
+              <p class="project__heading">Классная бытовка</p>
+              <p class="project__descr">Площадь 2,4 кв.м.</p>
+              <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+            </div>
+        </div>
+
+        <div class="slider-item">
+            <img src="img/byt_inner_3.jpg" alt="Третий слайд">
+            <div class="slideText">
+              <p class="project__heading">Классная бытовка</p>
+              <p class="project__descr">Площадь 2,4 кв.м.</p>
+              <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+            </div>
+        </div>
+
+        <a class="prev" onclick="minusSlide('projects_security')"></a>
+        <a class="next" onclick="plusSlide('projects_security')"></a>
+      </div>
+    </div>
+    <!--Слайдер модульные конструкции-->
+    <div class="tabcontent projects_modul slidercontent">
+      <div class="slider">
+        <div class="slider-item">
+            <img src="img/byt_inner_1.jpg" alt="Первый слайд">
+            <div class="slideText">
+              <p class="project__heading">Классная бытовка</p>
+              <p class="project__descr">Площадь 2,4 кв.м.</p>
+              <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+            </div>
+        </div>
+
+        <div class="slider-item">
+            <img src="img/byt_inner_2.jpg" alt="Второй слайд">
+            <div class="slideText">
+              <p class="project__heading">Классная бытовка</p>
+              <p class="project__descr">Площадь 2,4 кв.м.</p>
+              <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+            </div>
+        </div>
+
+        <div class="slider-item">
+            <img src="img/byt_inner_3.jpg" alt="Третий слайд">
+            <div class="slideText">
+              <p class="project__heading">Классная бытовка</p>
+              <p class="project__descr">Площадь 2,4 кв.м.</p>
+              <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+            </div>
+        </div>
+
+        <a class="prev" onclick="minusSlide('projects_modul')"></a>
+        <a class="next" onclick="plusSlide('projects_modul')"></a>
+      </div>
+    </div>
+  </div>
+  <a class="button button__center" href=#form>получить консультацию</a>
+  <!--Внутренняя отделка-->
+  <div class="animate__block animate__block__right">
+    <h3 class="heading">ВАРИАНТЫ ВНУТРЕННЕЙ ОТДЕЛКИ</h3>
+    <div class="projects_inside">
+      <div class="project">
+        <img src="img/byt_inner_1.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="img/byt_inner_2.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="img/byt_inner_3.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="img/byt_inner_1.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="img/byt_inner_2.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="img/byt_inner_3.jpg">
+        <div class="project__text">
+          <p class="project__heading">Классная бытовка</p>
+          <p class="project__descr">Площадь 2,4 кв.м.</p>
+          <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+        </div>
+      </div>
+    </div>
+    <!--Слайдер внутренняя отделка-->
+    <div class="projects_inside_slider slidercontent active-tab">
+      <div class="slider">
+        <div class="slider-item">
+            <img src="img/byt_inner_1.jpg" alt="Первый слайд">
+            <div class="slideText">
+              <p class="project__heading">Классная бытовка</p>
+              <p class="project__descr">Площадь 2,4 кв.м.</p>
+              <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+            </div>
+        </div>
+
+        <div class="slider-item">
+            <img src="img/byt_inner_2.jpg" alt="Второй слайд">
+            <div class="slideText">
+              <p class="project__heading">Классная бытовка</p>
+              <p class="project__descr">Площадь 2,4 кв.м.</p>
+              <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+            </div>
+        </div>
+
+        <div class="slider-item">
+            <img src="img/byt_inner_3.jpg" alt="Третий слайд">
+            <div class="slideText">
+              <p class="project__heading">Классная бытовка</p>
+              <p class="project__descr">Площадь 2,4 кв.м.</p>
+              <p class="project__price">от <span class="yellow">5400</span> руб.</p>
+            </div>
+        </div>
+
+        <a class="prev" onclick="minusSlide('projects_inside_slider')"></a>
+        <a class="next" onclick="plusSlide('projects_inside_slider')"></a>
+      </div>
+    </div>
+  </div>
+  <!--Технические хар-ки-->
+  <div class="animate__block animate__block__left" id="details">
+    <h2 class="heading tech">технические характеристики <br>вагончиков</h2>
+    <div class="tech__blocks">
+      <div class="tech__block">
+        <div class="tech__block__img tech__block__img-1"></div>
+        <p class="tech__block__text">Чаще всего бытовки изготавливают как небольшие мобильные здания контейнерного типа, либо сборно-разборные конструкции высотой до 2-х этажей</p>
+      </div>
+      <div class="tech__block">
+        <div class="tech__block__img tech__block__img-2"></div>
+        <p class="tech__block__text">Готовые сооружения состоят из стальной рамы и панельных стен, крыши и пола. Каркас бывает сварным, а бывает сборно-разборным. Этот тип бытовок востребован для перевозок на дальние расстояния</p>
+      </div>
+      <div class="tech__block">
+        <div class="tech__block__img tech__block__img-3"></div>
+        <p class="tech__block__text">Срок службы контейнеров-бытовок зависит от материалов. При адекватной эксплуатации, блок прослужит владельцу не менее 15-20 лет.</p>
+      </div>
+    </div>
+  </div>
+  <div class="animate__block animate__block__right">
+    <div class="scheme__block">
+    </div>
+  </div>
+ </div>
+</section>
+<!--Таблица-->
+<section class="section section__table animate__block animate__block__left">
+  <div class="section__wrapper">
+    <div class="table">
+      <div class="row row_yellow">
+        <div class="column-left"><p class="text">Длина здания, мм</p></div>
+        <div class="column-right"><p class="text">4000 / 6000 / 8000 / 9000</p></div>
+      </div>
+      <div class="row">
+        <div class="column-left"><p class="text">Ширина здания, мм</p></div>
+        <div class="column-right"><p class="text">2440 / 2800 / 3000</p></div>
+      </div>
+      <div class="row row_yellow">
+        <div class="column-left"><p class="text">Высота здания, мм</p></div>
+        <div class="column-right"><p class="text">2695 (без шасси) 3995 (с учетом шасси)</p></div>
+      </div>
+      <div class="row">
+        <div class="column-left"><p class="text">Каркас</p></div>
+        <div class="column-right"><p class="text">По периметру гнутый профиль сложной формы из листовой стали, усиленный продольным и поперечным набором из холодногнутых открытых профилей, огрунтован и окрашен</p></div>
+      </div>
+      <div class="row row_yellow">
+        <div class="column-left"><p class="text">Крыша</p></div>
+        <div class="column-right"><p class="text">Фальцевая с разуклонкой, покрытие - гладкий металлический оцинкованный лист толщиной - 0,5 мм, замок в двойной фальц</p></div>
+      </div>
+      <div class="row">
+        <div class="column-left"><p class="text">Внешняя отделка</p></div>
+        <div class="column-right"><p class="text">Вклеенный стальной, оцинкованный профилированный лист, толщиной - 0,5 мм, с полимерным покрытием, цвет на выбор по каталогу RAL</p></div>
+      </div>
+      <div class="row row_yellow">
+        <div class="column-left"><p class="text">Внутренняя отделка</p></div>
+        <div class="column-right"><p class="text">Пол: полукоммерческий линолеум / ламинат / керамогранит / рифленый стальной или алюминиевый лист. Потолок и стены: ЛДСП / ПВХ панели / оцинкованный металлический лист / вагонка / ГВЛ ламинированный</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left"><p class="text">Утеплитель</p></div>
+        <div class="column-right"><p class="text">Стены ПСБС-25 (пенополистирол самозатухающий, плотность - 25 кг/м3), толщина 150 мм. Пол: минеральная вата на основе стекловолокна, толщина 150 мм. Потолок: минеральная вата на основе стекловолокна, толщина 100 мм; ПСБС-15 (пенополистирол самозатухающий, плотность - 15 кг/м3), толщина - 50 мм.</p></div>
+      </div>
+      <div class="row row_yellow">
+        <div class="column-left"><p class="text">Стены</p></div>
+        <div class="column-right"><p class="text">Самонесущие, 3-х слойные герметичные, прессованные сэндвич-панели с утеплителем ПСБС-25 (пенополистирол самозатухающий, плотность - 25 кг/ м3), толщина – 150 мм</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left"><p class="text">Окна</p></div>
+        <div class="column-right"><p class="text">Пластиковый 3-кам. профиль, 2-кам. стеклопакет, поворотно-откидной механизм, в комплекте с диффузором. Размер 740*1020 мм. Возможно изменение размеров окон, в зависимости от размещения мебели, оборудования (для обеспечения беспрепятственного открытия/закрытия)</p></div>
+      </div>
+      <div class="row row_yellow">
+        <div class="column-left"><p class="text">Дверь входная</p></div>
+        <div class="column-right"><p class="text">Стальные (изотермические), утепленные с замком, в комплекте с коробкой и обналичкой, цвет по RAL. Размер 800*2050 мм</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column-left"><p class="text">Электрика</p></div>
+        <div class="column-right"><p class="text">Электроввод к сети напряжением 380 В. Внутри здания — 220 В, щит управления с автоматическими выключателями и УЗО. Электропроводка выполнена скрытым способом.</p></div>
+      </div>
+      <div class="row row_yellow">
+        <div class="column-left"><p class="text">Отопление</p></div>
+        <div class="column-right"><p class="text">Электрическое / водяное / топливное</p></div>
+      </div>
+      <div class="row">
+        <div class="column-left"><p class="text">Вентиляция</p></div>
+        <div class="column-right"><p class="text">Жилые помещения: естественная-через окна
+          и через клапана инфильтрации воздуха. Санитарные помещения: вытяжная (канальные вентиляторы)</p></div>
+      </div>
+      <div class="row row_yellow">
+        <div class="column-left"><p class="text">Водоснабжение</p></div>
+        <div class="column-right"><p class="text">Автономное / централизованное</p></div>
+      </div>
+      <div class="row">
+        <div class="column-left"><p class="text">Основание</p></div>
+        <div class="column-right"><p class="text">Рама / сани / шасси</p></div>
+      </div>
+      <div class="row row_yellow">
+        <div class="column-left"><p class="text">Шасси</p></div>
+        <div class="column-right"><p class="text">Прицеп тракторный двухостный модели «ИРКУТ» категории Ra3, модификаций «ИРКУТ- 60/70/80/90»</p></div>
+      </div>
+      <div class="row">
+        <div class="column-left"><p class="text">Документы</p></div>
+        <div class="column-right"><p class="text">Паспорт, сертификат соответствия, инструкции по эксплуатации</p></div>
+      </div>
+      <div class="row row_yellow">
+        <div class="column-left"><p class="text">Вес здания</p></div>
+        <div class="column-right"><p class="text">Не более 9000 кг</p></div>
+      </div>
+      <div class="row">
+        <div class="column-left"><p class="text">Гарантийный срок</p></div>
+        <div class="column-right"><p class="text">12 месяцев с даты поставки</p></div>
+      </div>
+      <div class="row row_yellow">
+        <div class="column-left"><p class="text">Срок эксплуатации</p></div>
+        <div class="column-right"><p class="text">20 лет</p></div>
+      </div>
+    </div>
+    <a class="button button__center" href="#form">собери свою бытовку</a>
+  </div>
+</section>
+<!--Клиенты-->
+<section class="section section__clients animate__block animate__block__right" id="clients">
+  <div class="section__wrapper">
+    <h2 class="heading">нам доверяют</h2>
+    <div class="clients__logos">
+      <div class="client__logo client__logo-1"></div>
+      <div class="client__logo client__logo-2"></div>
+      <div class="client__logo client__logo-3"></div>
+      <div class="client__logo client__logo-4"></div>
+      <div class="client__logo client__logo-5"></div>
+      <div class="client__logo client__logo-6"></div>
+      <div class="client__logo client__logo-7"></div>
+      <div class="client__logo client__logo-8"></div>
+      <div class="client__logo client__logo-9"></div>
+      <div class="client__logo client__logo-10"></div>
+    </div>
+  </div>
+</section>
+<!--Форма-->
+<section class="section section__form animate__block animate__block__left" id="form">
+  <div class="section__wrapper">
+    <h2 class="heading">бесплатная консультация</h2>
+  </div>
+  <div class="form__block">
+    <div class="section__wrapper">
+      <p class="form__heading"><span>Остались вопросы?</span><br> Оставьте заявку на бесплатную консультацию,<br> и мы сформируем для Вас<br><span>индивидуальное предложение</span></p>
+      <form class="contact__form">
+        <div class="contact__form__row">
+          <input type="text" placeholder="Введите Ваше имя" class="contact__form__input">
+          <input type="number" placeholder="+7" class="contact__form__input">
+          <a type="submit" value="Отправить" class="contact__form__btn">Получить предложение</a>
+        </div>
+        <div class="contact__form__checkbox">
+          <input type="checkbox" id="form__agreement" checked="checked" >
+          <label for="form__agreement" class="form__agreement__label">Заполняя форму, вы даете согласие на обработку персональных данных</label>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+	<div class="section__wrapper">
+		<div class="footer__blocks">
+			<div class="footer__block__info">
+        <p class="footer__block__info__text">Struktura</p>
+        <a href="#about" class="footer__block__info__link">О нас</a>
+        <a href="#projects" class="footer__block__info__link">Проекты</a>
+        <a href="#details" class="footer__block__info__link">Характеристики</a>
+        <a href="#clients" class="footer__block__info__link">Клиенты</a>
+      </div>
+      <div class="footer__block__info">
+        <p class="footer__block__info__text">Адрес</p>
+        <a href="" class="footer__block__info__link">Улан-Удэ<br> ул. Ленина, 1</a>
+      </div>
+      <div class="footer__block__info">
+        <p class="footer__block__info__text">телефон | почта</p>
+        <a href="" class="footer__block__info__link">+7 (800) 000-000</a>
+        <p class="footer__block__info__link"> ПН-ПТ с 9:00-18:00</p>
+        <a href="" class="footer__block__info__link">info@struktura.group </a>
+      </div>
+      <div class="footer__block__info">
+        <p class="footer__block__info__text">мессенджеры</p>
+        <div class="footer__messengers">
+          <a href="" class="footer__block__info__link"><i class="fab fa-viber  contacts__icon"></i></a>
+          <a href="" class="footer__block__info__link"><i class="fab fa-telegram-plane contacts__icon"></i></a>
+          <a href="" class="footer__block__info__link"><i class="fab fa-whatsapp contacts__icon"></i></a>
+        </div>
+      </div>
+		</div>
+    <div class="footer__blocks__bottom">
+      <img src="img/logo.svg" class="footer__logo">
+      <div class="footer__block__info company__logo">2021. All rights reserved.</div>
+    </div>
+	</div>
+</footer>
+<script src="my_scripts.js"></script>
+</body>
+</html>
